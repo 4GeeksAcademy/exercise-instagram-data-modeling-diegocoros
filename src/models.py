@@ -55,7 +55,7 @@ class Like(db.Model):
     user = db.relationship('User', back_populates='likes')
     post = db.relationship('Post', back_populates='likes')
 
-## Draw from SQLAlchemy base
+## Draw from SQLAlchemy baser
 try:
     result = render_er(db.Model, 'diagram.png')
     print("Success! Check the diagram.png file")
